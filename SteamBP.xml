@@ -1,0 +1,394 @@
+<!--
+theme name:		SteamBP (Steam Big Picture)
+version:		0.99
+author:			KazanTheMan
+email:			
+website:		
+-->
+
+<theme>
+
+	<formatVersion>4</formatVersion>
+	
+	<view name="system, basic, detailed, grid">
+		<image name="background_color" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<color>0b1d35</color>
+		</image>
+		
+		<image name="background_gradient" extra="true">
+			<path>./_inc/images/bg_bokeh.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+		</image>
+		
+		<image name="background_help" extra="true">
+			<path>./_inc/images/bg_helpbar.png</path>
+			<origin>0 1</origin>
+			<pos>0 1</pos>
+			<size>1 0.10</size>
+		</image>
+		
+		<helpsystem name="help">
+			<textColor>489ed6</textColor>
+			<iconColor>2875a3</iconColor>
+			<fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+			<fontSize>0.05</fontSize>
+			<pos>0.012 0.9375</pos>
+		</helpsystem>
+	</view>
+	
+	<view name="system">
+		<image name="top_hr_bar" extra="true">
+			<path>./_inc/images/gradient_bar.png</path>
+			<origin>0 0.5</origin>
+			<pos>0 0.185</pos>
+			<size>1 0.001</size>
+		</image>
+		<image name="bottom_hr_bar" extra="true">
+			<path>./_inc/images/gradient_bar.png</path>
+			<origin>0 0.5</origin>
+			<pos>0 0.545</pos>
+			<size>1 0.001</size>
+		</image>
+	</view>
+	
+	<feature supported="carousel">
+		<view name="system">
+			<image name="carousel_middle" extra="true">
+				<path>./_inc/images/bg_carousel_middle.png</path>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.365</pos>
+				<maxSize>0.25 0.25</maxSize>
+			</image>
+			<image name="carousel_middle_glow" extra="true">
+				<path>./_inc/images/bg_carousel_middle_glow.png</path>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.365</pos>
+				<maxSize>0.25 0.25</maxSize>
+			</image>
+			
+			<image name="carousel_left" extra="true">
+				<path>./_inc/images/bg_carousel_left.png</path>
+				<origin>0.5 0.5</origin>
+				<pos>0.23 0.365</pos>
+				<maxSize>0.25 0.25</maxSize>
+			</image>
+			<image name="carousel_far_left" extra="true">
+				<path>./_inc/images/bg_carousel_right.png</path>
+				<origin>0.5 0.5</origin>
+				<pos>-0.05 0.365</pos>
+				<maxSize>0.25 0.25</maxSize>
+			</image>
+			
+			<image name="carousel_right" extra="true">
+				<path>./_inc/images/bg_carousel_right.png</path>
+				<origin>0.5 0.5</origin>
+				<pos>0.77 0.365</pos>
+				<maxSize>0.25 0.25</maxSize>
+			</image>
+			<image name="carousel_far_right" extra="true">
+				<path>./_inc/images/bg_carousel_left.png</path>
+				<origin>0.5 0.5</origin>
+				<pos>1.05 0.365</pos>
+				<maxSize>0.25 0.25</maxSize>
+			</image>
+		
+			<carousel name="systemcarousel">
+				<type>horizontal</type>
+				<pos>0.10 0.26</pos>
+				<size>.80 0.21</size>
+				<color>FFFFFF00</color>
+				<logoScale>1.25</logoScale>
+				<logoSize>0.125 0.10</logoSize>
+				<maxLogoCount>3</maxLogoCount>
+			</carousel>
+			
+			<text name="systemInfo">
+				<pos>0.10 0.419</pos>
+				<size>0.80 0.04</size>
+				<backgroundColor>FFFFFF00</backgroundColor>
+				<color>d4f3fc</color>
+				<fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+				<fontSize>0.035</fontSize>
+			</text>
+		</view>
+	</feature>
+	
+	<view name="basic, detailed">
+		<image name="logo_background" extra="true">
+			<path>./_inc/images/bg_systembar.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 0.10</size>
+		</image>
+		
+		<!--<image name="logo_helper" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0.50</origin>
+			<pos>0.01 0.01</pos>
+			<size>0.25 0.06</size>
+			<color>FF0000aa</color>
+		</image>-->
+		
+		<image name="logo">
+			<origin>0 0.50</origin>
+			<pos>0.01 0.04</pos>
+			<maxSize>0.25 0.06</maxSize>
+		</image>
+	</view>
+	
+	<view name="basic">		
+		<!--<image name="gamelist_helper" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.03 0.10</pos>
+			<size>0.50 0.79</size>
+			<color>FF0000aa</color>
+		</image>-->
+		
+		<textlist name="gamelist">
+			<selectorColor>66bff3</selectorColor>
+			<selectedColor>072e46</selectedColor>
+			<primaryColor>66bff3</primaryColor>
+			<secondaryColor>09324c</secondaryColor>
+			<fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+			<fontSize>0.035</fontSize>
+			<alignment>left</alignment>
+			<size>0.50 0.79</size>
+			<pos>0.04 0.10</pos>
+		</textlist>
+	</view>
+	
+	<view name="detailed">
+		<!-- Placement Helpers -->
+		
+		<!--<image name="image_helper" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.04 0.10</pos>
+			<size>0.30 0.25</size>
+			<color>3366AAaa</color>
+		</image>
+		
+		<image name="gamelist_helper" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.04 0.36</pos>
+			<size>0.30 0.52</size>
+			<color>AA3333aa</color>
+		</image>-->
+		
+		<!--<image name="metadata_helper" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.36 0.10</pos>
+			<size>0.58 0.23</size>
+			<color>00AAAAaa</color>
+		</image> -->
+		
+		<!-- <image name="desc_helper1" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.36 0.34</pos>
+			<size>0.18 0.54</size>
+			<color>AA9900aa</color>
+		</image>
+		
+		<image name="desc_helper2" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.555 0.34</pos>
+			<size>0.19 0.54</size>
+			<color>AA9900aa</color>
+		</image>
+		
+		<image name="desc_helper3" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.76 0.34</pos>
+			<size>0.18 0.54</size>
+			<color>AA9900aa</color>
+		</image> -->
+		
+		<!-- End Helpers -->
+		
+		<image name="no_image_bg" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.19 0.225</pos>
+			<maxSize>0.30 0.25</maxSize>
+			<path>./_inc/images/bg_no_game_image.png</path>
+		</image>
+		
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.19 0.225</pos>
+			<maxSize>0.30 0.25</maxSize>
+		</image>
+		
+		<textlist name="gamelist">
+			<selectorColor>66bff3</selectorColor>
+			<selectedColor>072e46</selectedColor>
+			<primaryColor>66bff3</primaryColor>
+			<secondaryColor>09324c</secondaryColor>
+			<fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+			<fontSize>0.035</fontSize>
+			<alignment>left</alignment>
+			<size>0.30 0.52</size>
+			<pos>0.04 0.36</pos>
+		</textlist>
+		
+		<!-- Currently an non-functioning element outside of grid view. Bummer, would be very convenient.
+		<ninepatch name="description_bg" extra="true">
+			<pos>0.36 0.34</pos>
+			<size>0.18 0.54</size>
+			<origin>0 0</origin>
+			<path>./_inc/images/detail_ninepatch.png</path>
+		</ninepatch>
+		-->
+		
+		<image name="description_bg_outline" extra="true">
+			<pos>0.359 0.339</pos>
+			<size>0.362 0.542</size>
+			<origin>0 0</origin>
+			<path>./_inc/images/bg_color.png</path>
+			<color>06162444</color>
+		</image>
+		
+		<image name="description_bg" extra="true">
+			<pos>0.36 0.34</pos>
+			<size>0.36 0.54</size>
+			<origin>0 0</origin>
+			<path>./_inc/images/bg_color.png</path>
+			<color>46505C9F</color>
+		</image>
+		
+		<text name="md_lbl_description" extra="true">
+			<pos>0.365 0.345</pos>
+			<color>498cb1</color>
+			<fontPath>./_inc/fonts/CALIBRI.TTF</fontPath>
+			<fontSize>.025</fontSize>
+			<forceUppercase>1</forceUppercase>
+			<text>Description</text>
+		</text>
+		
+		<text name="md_description">
+			<pos>0.365 0.385</pos>
+			<size>0.34 0.49</size>
+			<color>c8c9ca</color>
+			<fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+			<fontSize>0.025</fontSize>
+			<alignment>left</alignment>
+			<forceUppercase>0</forceUppercase>
+			<lineSpacing>1.25</lineSpacing>
+		</text>
+		
+		<image name="meta_bg_top" extra="true">
+			<path>./_inc/images/bg_metabar_top.png</path>
+			<origin>0 0</origin>
+			<pos>0.36 0.10</pos>
+			<size>0.58 0.09</size>
+		</image>
+		
+		<image name="meta_bg_bottom" extra="true">
+			<path>./_inc/images/bg_metabar_bottom.png</path>
+			<origin>0 0</origin>
+			<pos>0.36 0.19</pos>
+			<size>0.58 0.14</size>
+		</image>
+		
+		<text name="md_lbl_rating, md_lbl_lastplayed">
+			<color>4dbbf6</color>
+			<fontPath>./_inc/fonts/CALIBRI.TTF</fontPath>
+			<fontSize>.04</fontSize>
+		</text>
+				
+		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_playcount">
+			<color>498cb1</color>
+			<fontPath>./_inc/fonts/CALIBRI.TTF</fontPath>
+			<fontSize>.025</fontSize>
+			<forceUppercase>1</forceUppercase>
+		</text>
+		
+		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
+			<color>c4d2dd</color>
+			<fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+			<fontSize>.025</fontSize>
+		</text>
+		
+		<text name="md_lbl_rating">
+			<pos>0.37 0.115</pos>
+		</text>
+		
+		<rating name="md_rating">
+			<filledPath>./_inc/images/rating_thumb_full.png</filledPath>
+			<unfilledPath>./_inc/images/rating_thumb_empty.png</unfilledPath>
+			<pos>0.44 0.115</pos>
+			<size>0.23 0.05</size>
+		</rating>
+		
+		<text name="md_lbl_lastplayed">
+			<pos>0.69 0.115</pos>
+		</text>
+		
+		<datetime name="md_lastplayed">
+			<color>a2ce07</color>
+			<fontPath>./_inc/fonts/CALIBRI.TTF</fontPath>
+			<fontSize>.04</fontSize>
+			<pos>0.80 0.115</pos>
+		</datetime>
+		
+		<text name="md_lbl_developer">
+			<pos>0.37 0.2</pos>
+		</text>
+		<text name="md_developer">
+			<pos>0.45 0.192</pos>
+		</text>
+		
+		<text name="md_lbl_publisher">
+			<pos>0.37 0.24</pos>
+		</text>
+		<text name="md_publisher">
+			<pos>0.45 0.232</pos>
+		</text>
+		
+		<text name="md_lbl_releasedate">
+			<pos>.37 .28</pos>
+		</text>
+		<datetime name="md_releasedate">
+			<color>c4d2dd</color>
+			<fontSize>.025</fontSize>
+			<fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+			<pos>.45 .28</pos>
+		</datetime>
+		
+		<text name="md_lbl_playcount">
+			<pos>0.73 0.2</pos>
+		</text>
+		<text name="md_playcount">
+			<pos>0.83 0.192</pos>
+		</text>
+		
+		<text name="md_lbl_genre">
+			<pos>0.73 0.24</pos>
+		</text>
+		<text name="md_genre">
+			<pos>0.83 0.232</pos>
+		</text>
+		
+		<text name="md_lbl_players">
+			<pos>0.73 0.28</pos>
+		</text>
+		<text name="md_players">
+			<pos>0.83 0.272</pos>
+		</text>
+		
+	</view>
+	
+	<view name="grid"></view>
+	
+</theme>
