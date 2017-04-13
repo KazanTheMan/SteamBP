@@ -1,0 +1,37 @@
+Theme 'SteamBP' v0.99.02 - 04/13/2017 by KazanTheMan
+For use with EmulationStation (http://www.emulationstation.org/)
+
+System Images:
+Customize the overlay in the background of any system screen and the main carousel screen
+copy or overwrite to /etc/emulationstation/themes/SteamBP/%SYSTEM%/system-image.png
+
+Changelog
+=========
+---04/13/2017--- 00.99.02
+Added Steam
+Updated theme.xml for all systems to include system-image.png
+Included system-image.png in SteamBP.xml to show as background overlay for carousel and system pages
+Added README
+
+---04/10/2017--- 00.99.01
+Fixed improperly placed gradient on standard carousel screen
+Added Media placeholder panel in detail view
+Fixed wrongly sized and placed elements in detail view
+Renamed several wrongly named system.svg files from initial release
+Duplicated full support for all systems included with the base install of EmulationStation, per 'simple' theme
+
+---04/08/2017--- 00.99
+Initial release
+
+=============================================================================================================
+
+Summary of License:
+
+ALLOWED: 		Share and duplicate as is
+				Edits, alterations, changes
+			
+REQUIREMENTS:	Attribution - Give credit to the creator
+				Indicate changes made
+				Publish under the same license
+				
+PROHIBITED:		Commercial distribution

@@ -1,31 +1,53 @@
 <!--
 theme name:		SteamBP (Steam Big Picture)
-version:		0.99.01
+version:		0.99.02
 author:			KazanTheMan
 email:			
 website:		github.com/KazanTheMan
+license:		creative commons CC-BY-4.0
+Based on: Valve's Steam Big Picture Mode for large screen game library display and controller play on PC.
 -->
 
 <theme>
 
-	<formatVersion>4</formatVersion>
+	<formatVersion>3</formatVersion>
 	
+	<!-- Background Image -->
 	<view name="system, basic, detailed, grid">
-		<image name="background_color" extra="true">
-			<path>./_inc/images/bg_color.png</path>
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<color>0c1c34</color>
-		</image>
-		
-		<image name="background_image" extra="true">
+		<image name="background" extra="true">
 			<path>./_inc/images/bg_bokeh.png</path>
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
 		</image>
+	</view>
+	<!--<view name="video">
+		<image name="background">
+			<path>./_inc/images/bg_bokeh.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+		</image>
+	</view> -->
+	<!-- End Background Image -->
+	
+	
+	<view name="system, basic, detailed, grid"> <!--WIP: Video -->
 		
+		<!--Declare empty image format with no path and a color property.
+			When you later initialize a path, like in theme.xml,
+			this gives you a nice transparent color overlay.
+			It does make the image from the path transparent as well, however.-->
+		<!--Video view currently does not function with said behavior
+			if the element is created in the main theme xml,
+			and if any properties are defined or changed in an external xml,
+			such as system folder theme.xml files, they are ignored.-->
+		<image name="background_system_image" extra="true">
+			<origin>0.50 0.50</origin>
+			<maxSize>.66 .66</maxSize>
+			<pos>0.5 0.5</pos>
+			<color>10447464</color>
+		</image>
 		<image name="background_help" extra="true">
 			<path>./_inc/images/bg_helpbar.png</path>
 			<origin>0 1</origin>
@@ -122,7 +144,7 @@ website:		github.com/KazanTheMan
 		</view>
 	</feature>
 	
-	<view name="basic, detailed">
+	<view name="basic, detailed"> <!--WIP: Video-->
 		<image name="logo_background" extra="true">
 			<path>./_inc/images/bg_systembar.png</path>
 			<origin>0 0</origin>
@@ -151,10 +173,8 @@ website:		github.com/KazanTheMan
 		</textlist>
 	</view>
 	
-	<view name="detailed">
-
+	<view name="detailed"><!--WIP: Video-->
 		<!-- Background Image Elements -->
-		
 		<image name="no_image_bg" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.19 0.225</pos>
@@ -204,15 +224,6 @@ website:		github.com/KazanTheMan
 			<pos>0.743 0.341</pos>
 			<size>0.196 0.540</size>
 		</image>
-		
-		<!-- Currently an non-functioning element outside of grid view. Bummer, would be very convenient.
-		<ninepatch name="description_bg" extra="true">
-			<pos>0.36 0.34</pos>
-			<size>0.18 0.54</size>
-			<origin>0 0</origin>
-			<path>./_inc/images/detail_ninepatch.png</path>
-		</ninepatch>
-		-->
 		
 		<!-- End Background Image Elements -->
 		
@@ -361,6 +372,17 @@ website:		github.com/KazanTheMan
 		</image>
 	</view>
 	
-	<view name="grid"></view>
+	<!--<view name="video">
+		<video name="md_video">
+			<origin>0 0</origin>
+			<pos>0.748 0.386</pos>
+			<maxSize>0.186 0.235</maxSize>
+			<delay>5</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+		</video>
+	</view>-->
+	
+	<!--<view name="grid"></view>-->
 	
 </theme>
