@@ -5,7 +5,7 @@ author:			KazanTheMan
 email:			
 website:		github.com/KazanTheMan
 license:		creative commons CC-BY-4.0
-Based on: Valve's Steam Big Picture Mode for large screen game library display and controller play on PC.
+Based on Valve's Steam Big Picture Mode for large screen game library display and controller play on PC.
 -->
 
 <theme>
@@ -21,18 +21,24 @@ Based on: Valve's Steam Big Picture Mode for large screen game library display a
 			<size>1 1</size>
 		</image>
 	</view>
-	<!--<view name="video">
+	<view name="video">
 		<image name="background">
 			<path>./_inc/images/bg_bokeh.png</path>
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
 		</image>
-	</view> -->
+		<image name="md_marquee">
+			<pos>0.541 0.631</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.35 0.49</maxSize>
+			<color>10447464</color>
+		</image>
+	</view>
 	<!-- End Background Image -->
 	
 	
-	<view name="system, basic, detailed, grid"> <!--WIP: Video -->
+	<view name="system, basic, detailed, grid, video">
 		
 		<!--Declare empty image format with no path and a color property.
 			When you later initialize a path, like in theme.xml,
@@ -144,7 +150,7 @@ Based on: Valve's Steam Big Picture Mode for large screen game library display a
 		</view>
 	</feature>
 	
-	<view name="basic, detailed"> <!--WIP: Video-->
+	<view name="basic, detailed, video">
 		<image name="logo_background" extra="true">
 			<path>./_inc/images/bg_systembar.png</path>
 			<origin>0 0</origin>
@@ -173,7 +179,7 @@ Based on: Valve's Steam Big Picture Mode for large screen game library display a
 		</textlist>
 	</view>
 	
-	<view name="detailed"><!--WIP: Video-->
+	<view name="detailed, video">
 		<!-- Background Image Elements -->
 		<image name="no_image_bg" extra="true">
 			<origin>0.5 0.5</origin>
@@ -372,7 +378,7 @@ Based on: Valve's Steam Big Picture Mode for large screen game library display a
 		</image>
 	</view>
 	
-	<!--<view name="video">
+	<view name="video">
 		<video name="md_video">
 			<origin>0 0</origin>
 			<pos>0.748 0.386</pos>
@@ -381,7 +387,7 @@ Based on: Valve's Steam Big Picture Mode for large screen game library display a
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 		</video>
-	</view>-->
+	</view>
 	
 	<!--<view name="grid"></view>-->
 	
