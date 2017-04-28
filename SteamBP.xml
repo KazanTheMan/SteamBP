@@ -44,10 +44,6 @@ Based on Valve's Steam Big Picture Mode for large screen game library display an
 			When you later initialize a path, like in theme.xml,
 			this gives you a nice transparent color overlay.
 			It does make the image from the path transparent as well, however.-->
-		<!--Video view currently does not function with said behavior
-			if the element is created in the main theme xml,
-			and if any properties are defined or changed in an external xml,
-			such as system folder theme.xml files, they are ignored.-->
 		<image name="background_system_image" extra="true">
 			<origin>0.50 0.50</origin>
 			<maxSize>.66 .66</maxSize>
