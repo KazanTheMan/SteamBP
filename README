@@ -1,4 +1,4 @@
-Theme 'SteamBP' v0.99.02 - 04/13/2017 by KazanTheMan
+Theme 'SteamBP' v0.99.04 - 05/08/2017 by KazanTheMan
 For use with EmulationStation (http://www.emulationstation.org/)
 
 System Images:
@@ -7,6 +7,10 @@ copy or overwrite to /etc/emulationstation/themes/SteamBP/%SYSTEM%/system-image.
 
 Changelog
 =========
+---05/08/2017--- 00.99.04
+Z-Index support.
+Gamelist scroll audio added.
+
 ---04/27/2017--- 00.99.03
 The previous commit had reverted changes that should not have made it to master. Those reverted changes have been fixed.
 Updated SteamBP.xml to support video theming when available. Z-indexing does not work properly currently, many elements are hard coded. Support has just been released for manual control of z-indexes through an xml property and will be included in the next commit.
