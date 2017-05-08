@@ -1,11 +1,14 @@
 <theme>
 
-	<formatVersion>4</formatVersion>
+	<formatVersion>3</formatVersion>
 	<include>./../SteamBP.xml</include>
 	
-	<view name="system, basic, detailed">
+	<view name="system, basic, detailed, video">
 		<image name="logo">
-			<path>./retropie.svg</path>
+			<path>./system.svg</path>
+		</image>
+		<image name="background_system_image" extra="true">
+			<path>./system-image.png</path>
 		</image>
 	</view>
 	<view name="basic"></view>
